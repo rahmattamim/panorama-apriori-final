@@ -1,0 +1,47 @@
+.navbar{
+
+    transition: .3s;
+
+}
+
+.nav-link{
+
+    font-weight:500;
+
+}
+
+.display-4{
+
+    color:#004643;
+
+}
+
+.btn-success{
+
+    background:#004643;
+
+    border:none;
+
+}
+
+.btn-success:hover{
+
+    background:#023c39;
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    scroll-margin-top:80px;
+}
+
+.navbar .nav-link{
+    font-weight:500;
+}
+
+.navbar .nav-link:hover{
+    color:#198754;
+}
