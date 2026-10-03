@@ -23,6 +23,15 @@ TOKO PANORAMA
 
 <h2>LAPORAN HASIL ANALISIS APRIORI</h2>
 
+<p>
+    Periode Transaksi:
+    <strong>
+        {{ \Carbon\Carbon::parse($tanggal_awal)->format('d-m-Y') }}
+        sampai
+        {{ \Carbon\Carbon::parse($tanggal_akhir)->format('d-m-Y') }}
+    </strong>
+</p>
+
 <p>Minimum Support : {{ $parameter->min_support }}%</p>
 <p>Minimum Confidence : {{ $parameter->min_confidence }}%</p>
 

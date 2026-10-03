@@ -29,9 +29,14 @@ class HasilAnalisisController extends Controller
         $rules = session('rules', []);
         $parameter = ParameterApriori::first();
 
+        $tanggalAwal = session('tanggal_awal');
+        $tanggalAkhir = session('tanggal_akhir');
+
         $pdf = Pdf::loadView('hasil-analisis.pdf', [
             'rules' => $rules,
             'parameter' => $parameter,
+            'tanggal_awal' => $tanggalAwal,
+            'tanggal_akhir' => $tanggalAkhir,
         ]);
 
         return $pdf->download('Laporan-Hasil-Apriori.pdf');
